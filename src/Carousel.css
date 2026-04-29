@@ -1,0 +1,53 @@
+ul {
+    display: flex;
+    flex-direction: row;
+}
+.carousel {
+    display: flex;
+    align-items: center;
+    width: 300px; /* Adjust based on the width of 3 items */
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .carousel ul {
+    display: flex;
+    transition: transform 0.5s ease;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  .carousel li {
+    min-width: 100px; /* Adjust based on the width of each item */
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .carousel img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease;
+  }
+  
+  button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    color: rgba(51, 51, 51, 0.4); /* More transparent color */
+    text-shadow: 0 0 5px rgba(51, 51, 51, 0.5); /* Softer outline effect */
+    z-index: 1;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+  }
+  #slide-left {
+    left: 0;
+  }
+  
+  #slide-right {
+    right: 0;
+  }
